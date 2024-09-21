@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre Nutrição Humana</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .quiz-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: justify;
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .answers button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .answers button:hover {
+            background-color: #dcdcdc;
+        }
+
+        .answers button.correct {
+            background-color: #4CAF50;
+            border-color: #4CAF50;
+            color: white;
+        }
+
+        .answers button.incorrect {
+            background-color: #e74c3c;
+            border-color: #e74c3c;
+            color: white;
+        }
+
+        .feedback {
+            font-size: 18px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .feedback.correct {
+            color: #4CAF50;
+        }
+
+        .feedback.incorrect {
+            color: #e74c3c;
+        }
+
+        .print-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .print-btn:hover {
+            background-color: #2980b9;
+        }
+
+        @media (max-width: 600px) {
+            .quiz-container {
+                padding: 15px;
+            }
+            .answers button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Quiz 1 -->
+    <div class="quiz-container">
+        <h2>1. 1-Os esteróis são considerados uma categoria especial de lipídeos. São componentes insolúveis em água e com baixa solubilidade em óleo, sendo encontrados em diversos seres vivos. O colesterol é o esterol mais conhecido e grande importância na saúde.
+Fonte: MAHAN, L. K.; ESCOTT-STUMP, S. ; RAYMOND, J.L. Krause: Alimentos, Nutrição e Dietoterapia. 13ª ed. Rio de Janeiro: Elsevier, 2013.
+ Considerando as funções metabólicas associadas ao colesterol, avalie as asserções a seguir e a relação proposta entre elas.
+
+Avalie as asserções sobre o colesterol e os níveis de lipoproteínas no organismo:</h2>
+        <p>I. No organismo humano, o colesterol é utilizado como matéria-prima para a produção de hormônios esteroides e sais biliares.</p>
+        <p>II. Níveis elevados de lipoproteínas na corrente sanguínea, podem representar riscos à saúde, especialmente de infarto.</p>
+        <p><strong>A respeito dessas asserções, assinale a opção correta:</strong></p>
+
+        <div class="answers">
+            <button onclick="checkAnswer(this, false)">A. As asserções I e II são proposições falsas.</button>
+            <button onclick="checkAnswer(this, true)">B. As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.</button>
+            <button onclick="checkAnswer(this, false)">C. As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.</button>
+            <button onclick="checkAnswer(this, false)">D. A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.</button>
+            <button onclick="checkAnswer(this, false)">E. A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.</button>
+        </div>
+
+        <p class="feedback"></p>
+    </div>
+
+    <!-- Quiz 2 -->
+    <div class="quiz-container">
+        <h2>2. Os carboidratos fornecem a maior parte da energia necessária para manutenção das atividades das pessoas. A ingestão diária recomendada de carboidratos é de 50% a 60% do valor calórico total. Eles são encontrados nos amidos e açúcares e, com exceção da lactose do leite e do glicogênio do tecido animal, são de origem vegetal. São classificados em simples e complexos.Glicose, frutose, sacarose e lactose são os carboidratos simples mais encontrados nos alimentos, estando o amido entre os complexos".
+Os carboidratos são divididos em quatro tipos de estruturas: os monossacarideos, dissacarideos, oligossacarideos e os polissacarideosanalise
+De acordo com as classificações dos carboidratos, avalie as asserções:</h2>
+        <p>I. Os monossacarídeos são representados pela fórmula Cn (H2O)n. Sendo classificados como estruturas simples.</p>
+        <p>II. Em reações de oxirredução, a ligação entre carbonos é quebrada para produzir ácido carboxílico (COOH), fornecendo energia ao organismo.</p>
+        <p><strong>A respeito dessas asserções, assinale a opção correta:</strong></p>
+
+        <div class="answers">
+            <button onclick="checkAnswer(this, false)">A. As asserções I e II são verdadeiras, e a II é uma justificativa correta da I.</button>
+            <button onclick="checkAnswer(this, true)">B. As asserções I e II são verdadeiras, mas a II não é uma justificativa correta da I.</button>
+            <button onclick="checkAnswer(this, false)">C. A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.</button>
+            <button onclick="checkAnswer(this, false)">D. As asserções I e II são falsas.</button>
+            <button onclick="checkAnswer(this, false)">E. A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.</button>
+        </div>
+
+        <p class="feedback"></p>
+    </div>
+
+    <!-- Quiz 3 -->
+    <div class="quiz-container">
+        <h2>3. Sobre a ausência de uma substância, o corpo utiliza a segunda fonte de energia. Assinale a correta:</h2>
+        <div class="answers">
+            <button onclick="checkAnswer(this, false)">A. Os minerais.</button>
+            <button onclick="checkAnswer(this, false)">B. A gordura.</button>
+            <button onclick="checkAnswer(this, true)">C. A glicose.</button>
+            <button onclick="checkAnswer(this, false)">D. Os lipídios.</button>
+            <button onclick="checkAnswer(this, false)">E. As vitaminas.</button>
+        </div>
+        <p class="feedback"></p>
+    </div>
+
+    <!-- Quiz 4 -->
+    <div class="quiz-container">
+        <h2>4. Sobre a qualidade das dietas, de acordo com a funcionalidade, avalie as afirmativas:</h2>
+        <p>I. A proporção dos grupos alimentares em cada refeição.</p>
+        <p>II. A variedade de alimentos presentes em cada refeição.</p>
+        <p>III. A necessidade energética recomendada deve ser suprida.</p>
+        <p>IV. A avaliação da qualidade das dietas deve analisar a oferta de nutrientes.</p>
+        <div class="answers">
+            <button onclick="checkAnswer(this, false)">A. III e IV, apenas.</button>
+            <button onclick="checkAnswer(this, false)">B. II e IV, apenas.</button>
+            <button onclick="checkAnswer(this, false)">C. I, apenas.</button>
+            <button onclick="checkAnswer(this, false)">D. I, II e III, apenas.</button>
+            <button onclick="checkAnswer(this, true)">E. I, II, III e IV.</button>
+        </div>
+        <p class="feedback"></p>
+    </div>
+
+    <!-- Quiz 5 -->
+    <div class="quiz-container">
+        <h2>5. Sobre a definição correta de taxa metabólica basal (TMB), assinale a alternativa correta:</h2>
+        <div class="answers">
+            <button onclick="checkAnswer(this, false)">A. Quantidade de energia para uma refeição completa.</button>
+            <button onclick="checkAnswer(this, true)">B. Energia gasta durante repouso físico e mental.</button>
+            <button onclick="checkAnswer(this, false)">C. Energia para atividades intensas.</button>
+            <button onclick="checkAnswer(this, false)">D. Energia durante o sono profundo.</button>
+            <button onclick="checkAnswer(this, false)">E. Energia para atividades físicas moderadas.</button>
+        </div>
+        <p class="feedback"></p>
+    </div>
+
+    <!-- Quiz 6 -->
+    <div class="quiz-container">
+        <h2>6. Sobre o consumo de gordura insaturada e seus efeitos:</h2>
+        <p>I. O consumo de gordura insaturada deve ser limitado a 10% da ingestão de lipídios.</p>
+        <p>II. O consumo de gordura insaturada está relacionado ao aumento do HDL-colesterol, protetor da saúde cardiovascular.</p>
+        <div class="answers">
+            <button onclick="checkAnswer(this, false)">A. Asserções I e II são verdadeiras, e a II justifica a I.</button>
+            <button onclick="checkAnswer(this, false)">B. Asserções I e II são falsas.</button>
+            <button onclick="checkAnswer(this, true)">C. Asserção I é falsa, e a II é verdadeira.</button>
+            <button onclick="checkAnswer(this, false)">D. Asserções I e II são verdadeiras, mas a II não justifica a I.</button>
+            <button onclick="checkAnswer(this, false)">E. Asserção I é verdadeira, e a II é falsa.</button>
+        </div>
+        <p class="feedback"></p>
+    </div>
+
+    <!-- Quiz 7 -->
+    <div class="quiz-container">
+        <h2>7. Sobre os sintomas de desidratação, quais estão corretos?</h2>
+        <div class="answers">
+            <button onclick="checkAnswer(this, false)">A. Flatulência, sonolência, irritabilidade.</button>
+            <button onclick="checkAnswer(this, false)">B. Irritabilidade e dor de cabeça.</button>
+            <button onclick="checkAnswer(this, true)">C. Sonolência, irritabilidade e dor de cabeça.</button>
+            <button onclick="checkAnswer(this, false)">D. Sonolência e irritabilidade.</button>
+            <button onclick="checkAnswer(this, false)">E. Flatulência e dor de cabeça.</button>
+        </div>
+        <p class="feedback"></p>
+    </div>
+
+    <!-- Quiz 8 -->
+    <div class="quiz-container">
+        <h2>8. Sobre a Lei da Harmonia na alimentação de Pedro Escudero:</h2>
+        <p>I. Preconiza a distribuição proporcional de nutrientes.</p>
+        <p>II. Destaca a importância de variar o planejamento alimentar com ampla variedade de alimentos.</p>
+        <div class="answers">
+            <button onclick="checkAnswer(this, false)">A. II apenas.</button>
+            <button onclick="checkAnswer(this, false)">B. III apenas.</button>
+            <button onclick="checkAnswer(this, false)">C. I apenas.</button>
+            <button onclick="checkAnswer(this, true)">D. I e II apenas.</button>
+            <button onclick="checkAnswer(this, false)">E. I, II e III.</button>
+        </div>
+        <p class="feedback"></p>
+    </div>
+
+    <!-- Quiz 9 -->
+    <div class="quiz-container">
+        <h2>9. Qual o principal papel da vitamina E no organismo humano?</h2>
+        <div class="answers">
+            <button onclick="checkAnswer(this, false)">A. Regular os níveis de cálcio no sangue.</button>
+            <button onclick="checkAnswer(this, true)">B. Atuar como antioxidante.</button>
+            <button onclick="checkAnswer(this, false)">C. Aumentar a absorção de ferro.</button>
+            <button onclick="checkAnswer(this, false)">D. Estimular o crescimento muscular.</button>
+            <button onclick="checkAnswer(this, false)">E. Auxiliar na coagulação sanguínea.</button>
+        </div>
+        <p class="feedback"></p>
+    </div>
+
+    <!-- Quiz 10 -->
+    <div class="quiz-container">
+        <h2>10. Quais são as formas ativas da Vitamina A?</h2>
+        <div class="answers">
+            <button onclick="checkAnswer(this, false)">A. Oxigênio, oxirredução e retinol.</button>
+            <button onclick="checkAnswer(this, false)">B. Ácido retinoico, oxirredução e retinol.</button>
+            <button onclick="checkAnswer(this, false)">C. Cadeia de carbono, oxirredução e retinol.</button>
+            <button onclick="checkAnswer(this, true)">D. Retinol, retinal e ácido retinoico.</button>
+            <button onclick="checkAnswer(this, false)">E. Cadeia de carbono, retinal e ácido retinoico.</button>
+        </div>
+        <p class="feedback"></p>
+    </div>
+
+    <button class="print-btn" onclick="window.print()">Imprimir Quiz</button>
+
+    <script>
+        function checkAnswer(button, isCorrect) {
+            const allButtons = button.closest('.answers').querySelectorAll('button');
+            allButtons.forEach(btn => {
+                btn.disabled = true;
+                btn.classList.remove('correct', 'incorrect');
+            });
+
+            const feedback = button.closest('.quiz-container').querySelector('.feedback');
+            feedback.style.display = 'block';
+
+            if (isCorrect) {
+                button.classList.add('correct');
+                feedback.textContent = "Parabéns, continue assim! Você vai muito bem na prova. 🎉";
+                feedback.classList.add('correct');
+                feedback.classList.remove('incorrect');
+            } else {
+                button.classList.add('incorrect');
+                feedback.textContent = "Vamos tentar novamente na próxima. 😔";
+                feedback.classList.add('incorrect');
+                feedback.classList.remove('correct');
+            }
+        }
+    </script>
+
+</body>
+</html>
